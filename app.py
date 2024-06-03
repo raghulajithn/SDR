@@ -21,6 +21,9 @@ import streamlit as st
 
 nest_asyncio.apply()
 
+# Install Playwright
+os.system("playwright install")
+
 def extract_info_from_csv(csv_file):
     companies_info = []
     file = csv_file.read().decode('utf-8').splitlines()
